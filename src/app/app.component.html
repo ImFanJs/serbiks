@@ -1,16 +1,9 @@
-<section class="container-fluid">
+<section class="app container-fluid">
   <div class="row">
     <div class="col-12">
-      <div class="jumbotron">
-        <h1 class="display-3">Serbiks</h1>
-        <p class="lead">Servicios y mas</p>
-        <hr class="my-2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque consectetur quisquam. Minus veritatis dignissimos ad eveniet cumque amet repellat temporibus, sequi fugit perspiciatis doloribus voluptas suscipit reiciendis eligendi aliquid?</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-        </p>
-      </div>
+      <app-header></app-header>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
     </div>
-    <router-outlet></router-outlet>
   </div>
 </section>
