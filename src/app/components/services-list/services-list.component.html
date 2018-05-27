@@ -1,5 +1,6 @@
-<section class="services-list row">
+<section class="services-list col-12">
+  <p class="text-center">Services List!</p>
   <div class="col-12">
-    <p class="text-center">Services List!</p>
+    <app-service-card *ngFor="let service of services" [service]="service"></app-service-card>
   </div>
 </section>

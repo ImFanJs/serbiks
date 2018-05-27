@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicesService } from '../../services/services.service';
+import { Service } from '../../interfaces/service';
 
 @Component({
   selector: 'app-services-list',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services-list.component.scss']
 })
 export class ServicesListComponent implements OnInit {
-
-  constructor() { }
+  services: Service[];
+  constructor(private servicesService: ServicesService) { }
 
   ngOnInit() {
+    this.servicesService.getServicesList().subscribe((services: Service[]) => {
+      this.services = services;
+    });
   }
 
 }

@@ -1,0 +1,5 @@
+<div class="text-center text-white bg-info border rounded mb-3 pt-2" [routerLink]="['/details', service.id]">
+  <h5>{{service.name}}</h5>
+  <p>Company: {{service.company}}</p>
+  <p>Price: {{service.price | currency}}</p>
+</div>
